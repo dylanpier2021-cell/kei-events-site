@@ -4,7 +4,9 @@ module.exports = {
     "./index.html",
     "./privacy-policy/**/*.html",
     "./terms/**/*.html",
-    "./review/**/*.html"
+    "./review/**/*.html",
+    "./services/**/*.html",
+    "./blog/**/*.html"
   ],
   theme: {
     extend: {
