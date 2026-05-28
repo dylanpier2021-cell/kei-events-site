@@ -16,6 +16,9 @@
 ## Service pages
 
 - [Bounce House Rental](/services/bounce-house-rental/): Bounce house and inflatable rental in Champaign IL with delivery, setup, and safety inspection included
+- [Event Planning](/services/event-planning/): Full-service event planning in Champaign IL; concept, vendor coordination, and day-of execution
+- [Birthday Parties](/services/birthday-parties/): Birthday party planning in Champaign IL; kids, milestones, and surprise parties with bounce houses, decor, and catering
+- [Corporate Events](/services/corporate-events/): Corporate event planning in Champaign IL; team building, brand activations, holiday parties, and conferences
 
 ## Services
 
