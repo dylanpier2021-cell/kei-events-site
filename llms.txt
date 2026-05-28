@@ -4,23 +4,24 @@
 
 ## Pages
 
-- [Landing A - Bold](/landing-a): High-energy, red-forward landing page variation
-- [Landing B - Elegant](/landing-b): Polished, blue-forward landing page variation
-- [Landing C - Playful](/landing-c): Warm, yellow-forward landing page variation
+- [Home](/): Event planning, bounce houses, games, catering, and decor
+- [Privacy Policy](/privacy-policy/): SMS opt-out, data collection, and privacy practices
+- [Terms and Conditions](/terms/): SMS messaging terms, opt-out instructions, compliance
 
 ## Services
 
 - Birthday event planning
 - Corporate event planning
 - Bounce house rental
+- Giant games
+- Catering and vendor coordination
+- Decor, balloons, and setup
 - Any event: weddings, baby showers, retirements, holiday parties, brand activations
-
-## Legal
-
-- [Privacy Policy](/privacy-policy/): SMS opt-out, data collection, and privacy practices
-- [Terms and Conditions](/terms/): SMS messaging terms, opt-out instructions, compliance
 
 ## Contact
 
 - Phone: (217) 403-9288
+- Email: dean.aricka@gmail.com
+- Address: 606 Bloomington Rd, Champaign, IL 61820
 - Service area: Champaign County, IL
+- Instagram: https://www.instagram.com/deanaricka/
