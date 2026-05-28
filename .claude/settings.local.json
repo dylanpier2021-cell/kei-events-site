@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /a \"c:\\\\Users\\\\PC\\\\Claude\\\\Clients\\\\Aricka Dean\")",
+      "Bash(git -C \"c:/Users/PC/Claude/Clients/Aricka Dean\" log --oneline -5)",
+      "Bash(git -C \"c:/Users/PC/Claude/Clients/Aricka Dean\" rev-parse --show-toplevel)",
+      "Bash(ls -la \"c:/Users/PC/Claude\" 2>&1)",
+      "Read(//c/Users/PC/Claude/**)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git -C \"c:/Users/PC/Claude\" status)",
+      "Bash(git -C \"c:/Users/PC/Claude\" log --oneline -3)",
+      "Bash(git -C c:/Users/PC/Claude commit -m ' *)",
+      "Bash(git -C \"c:/Users/PC/Claude\" push)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(echo \"Exit:$?\")",
+      "Bash(git -C \"c:/Users/PC/Claude\" add \"Clients/Aricka Dean/landing-a/index.html\" \"Clients/Aricka Dean/landing-b/index.html\" \"Clients/Aricka Dean/landing-c/index.html\" \"Clients/Aricka Dean/src/input.css\" \"Clients/Aricka Dean/assets/css/styles.css\")",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(where cwebp *)",
+      "Bash(where magick *)",
+      "Bash(where ffmpeg *)",
+      "Bash(node -e \"try{require\\('sharp'\\);console.log\\('sharp ok'\\)}catch\\(e\\){console.log\\('no sharp'\\)}\")",
+      "Bash(node -e \"console.log\\(process.version\\); const fs=require\\('fs'\\); const files=fs.readdirSync\\('assets'\\).filter\\(f=>f.endsWith\\('.jpg'\\)||f.endsWith\\('.jpeg'\\)\\); files.forEach\\(f=>{const s=fs.statSync\\('assets/'+f\\).size; console.log\\(Math.round\\(s/1024\\)+'KB', f.substring\\(0,20\\)\\)}\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(python -c ' *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\PC\\.claude\\projects\\c--Users-PC-Claude\\memory"
+    ]
+  }
+}

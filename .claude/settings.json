@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Force \"c:\\\\Users\\\\PC\\\\Claude\\\\Clients\\\\Aricka Dean\")"
+    ]
+  }
+}
