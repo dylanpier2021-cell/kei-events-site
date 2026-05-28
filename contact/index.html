@@ -5,9 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Leave a Review | Kei Events</title>
-  <meta name="description" content="Rate your experience with Kei Events. Your feedback helps us serve the next family even better.">
-  <meta name="robots" content="noindex, follow">
+  <title>Request a Quote | Kei Events</title>
+  <meta name="description" content="Tell us about your event and Aricka will get back to you within one business day. Kei Events plans birthdays, corporate events, family reunions, and more in Champaign County, IL.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://keievents.com/contact/">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://keievents.com/contact/">
+  <meta property="og:title"       content="Request a Quote | Kei Events">
+  <meta property="og:description" content="Tell us about your event and Aricka will get back to you within one business day. Kei Events handles birthdays, corporate events, family reunions, and more in Champaign County, IL.">
+  <meta property="og:image"       content="https://keievents.com/assets/img/gallery-1.jpg">
+  <meta property="og:site_name"   content="Kei Events">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Request a Quote | Kei Events">
+  <meta name="twitter:description" content="Fill out the form and Aricka will get back to you within one business day.">
+  <meta name="twitter:image"       content="https://keievents.com/assets/img/gallery-1.jpg">
 
   <!-- SVG favicon - replace with real .ico when available -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='Georgia,serif' font-style='italic' fill='%23E63946'>K</text></svg>">
@@ -24,81 +38,43 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 
   <style>
-    .review-headline { font-family: 'Caveat', cursive; font-weight: 700; }
+    .contact-headline { font-family: 'Caveat', cursive; font-weight: 700; }
 
-    /* Star button base */
-    .star-btn {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      border-radius: 12px;
-      transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
-      min-width: 44px;
-      min-height: 44px;
-    }
-    .star-btn:focus-visible {
-      outline: 2px solid #1D4ED8;
-      outline-offset: 2px;
-    }
+    #site-header nav { transition: height 0.3s ease; }
+    #site-header.nav-shrunk nav { height: 64px; }
 
-    .star-icon {
-      width: 52px;
-      height: 52px;
-      fill: #d1d5db; /* gray-300 */
-      transition: fill 0.12s ease, transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
+    #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.2s ease; }
+    #mobile-menu.menu-open { max-height: 440px; }
 
-    @media (min-width: 640px) {
-      .star-icon {
-        width: 64px;
-        height: 64px;
-      }
-    }
-
-    .star-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: #6b7280;
-      transition: color 0.12s ease;
-      line-height: 1;
-    }
-
-    /* Filled state (set via JS) */
-    .star-btn.filled .star-icon {
-      fill: #FACC15;
-    }
-    .star-btn.filled .star-label {
-      color: #92400e;
-    }
-
-    @media (hover: hover) and (prefers-reduced-motion: no-preference) {
-      .star-btn:hover {
-        transform: scale(1.1);
-      }
-      .star-btn.filled .star-icon {
-        transform: scale(1.05);
-      }
-    }
-
-    /* Card entrance */
-    @keyframes card-rise {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .review-card {
-      animation: card-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
-    }
     @media (prefers-reduced-motion: reduce) {
-      .review-card { animation: none; opacity: 1; transform: none; }
+      #mobile-menu { transition: none; }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://keievents.com/contact/",
+        "name": "Request a Quote - Kei Events",
+        "description": "Contact Kei Events to request a quote for event planning, bounce house rental, catering coordination, and more in Champaign County, IL.",
+        "url": "https://keievents.com/contact/",
+        "isPartOf": { "@id": "https://keievents.com/#business" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home",    "item": "https://keievents.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://keievents.com/contact/" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-<body class="bg-kei-yellow-light text-gray-900">
+<body class="bg-white text-gray-900">
 
   <!-- NAV -->
   <header id="site-header" class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b-2 border-kei-yellow" role="banner">
@@ -120,12 +96,12 @@
               <li><a href="/services/corporate-events/"    class="block px-4 py-2.5 text-sm text-gray-700 hover:text-kei-blue hover:bg-kei-yellow-light transition-colors whitespace-nowrap">Corporate Events</a></li>
             </ul>
           </li>
-          <li><a href="/#gallery"  class="link-underline hover:text-kei-blue transition-colors">Gallery</a></li>
-          <li><a href="/#about"    class="link-underline hover:text-kei-blue transition-colors">About</a></li>
-          <li><a href="/contact/"  class="link-underline hover:text-kei-blue transition-colors">Contact</a></li>
+          <li><a href="/#gallery" class="link-underline hover:text-kei-blue transition-colors">Gallery</a></li>
+          <li><a href="/#about"   class="link-underline hover:text-kei-blue transition-colors">About</a></li>
+          <li><a href="/contact/" class="text-kei-blue font-semibold" aria-current="page">Contact</a></li>
         </ul>
         <div class="flex items-center gap-3">
-          <a href="/contact/"
+          <a href="/contact/" aria-current="page"
              class="hidden md:inline-flex items-center justify-center tap-target px-5 py-2.5 bg-kei-blue text-white text-sm font-semibold rounded-full hover:bg-kei-blue-dark btn-scale btn-cta-blue">
             Request a quote
           </a>
@@ -138,15 +114,16 @@
           </button>
         </div>
       </nav>
+      <!-- Mobile menu -->
       <div id="mobile-menu" role="navigation" aria-label="Mobile navigation">
         <div class="border-t border-gray-100">
           <ul class="flex flex-col pt-2 pb-4" role="list">
             <li><a href="/#services" class="flex items-center min-h-[48px] px-3 text-sm font-medium text-gray-700 hover:text-kei-blue transition-colors">Services</a></li>
             <li><a href="/#gallery"  class="flex items-center min-h-[48px] px-3 text-sm font-medium text-gray-700 hover:text-kei-blue transition-colors">Gallery</a></li>
             <li><a href="/#about"    class="flex items-center min-h-[48px] px-3 text-sm font-medium text-gray-700 hover:text-kei-blue transition-colors">About</a></li>
-            <li><a href="/contact/"  class="flex items-center min-h-[48px] px-3 text-sm font-medium text-gray-700 hover:text-kei-blue transition-colors">Contact</a></li>
+            <li><a href="/contact/" class="flex items-center min-h-[48px] px-3 text-sm font-medium text-kei-blue font-semibold" aria-current="page">Contact</a></li>
             <li class="px-3 pt-2">
-              <a href="/contact/"
+              <a href="/contact/" aria-current="page"
                  class="flex items-center justify-center tap-target w-full px-5 py-3 bg-kei-blue text-white text-sm font-semibold rounded-full hover:bg-kei-blue-dark btn-scale">
                 Request a quote
               </a>
@@ -157,74 +134,97 @@
     </div>
   </header>
 
+  <!-- BREADCRUMB -->
+  <nav class="bg-kei-yellow-light border-b border-kei-yellow py-3" aria-label="Breadcrumb">
+    <div class="container-x">
+      <ol class="flex items-center gap-2 text-sm text-gray-600" role="list">
+        <li><a href="/" class="hover:text-kei-blue transition-colors font-medium">Home</a></li>
+        <li aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </li>
+        <li><span class="text-kei-blue font-semibold" aria-current="page">Contact</span></li>
+      </ol>
+    </div>
+  </nav>
+
   <main id="main-content">
-    <section class="section-pad">
+
+    <!-- HERO: compact yellow bg, no photo panel -->
+    <section class="bg-kei-yellow section-pad" aria-labelledby="contact-hero-heading">
       <div class="container-x">
-        <div class="mx-auto" style="max-width: 560px;">
+        <div class="max-w-2xl">
+          <p class="text-gray-700 text-xs sm:text-sm font-bold uppercase tracking-widest mb-4">GET IN TOUCH</p>
+          <h1 id="contact-hero-heading" class="contact-headline text-gray-900 mb-5"
+              style="font-size: clamp(2.75rem, 7vw, 5rem); line-height: 1.05; letter-spacing: -0.01em;">
+            Let us plan something good
+          </h1>
+          <p class="text-gray-700 text-base md:text-xl max-w-xl leading-relaxed">
+            Fill out the form and we will get back to you within one business day. The more you tell us, the better we can quote.
+          </p>
+        </div>
+      </div>
+    </section>
 
-          <div class="review-card bg-white rounded-3xl shadow-lift p-8 md:p-12 text-center">
+    <!-- FORM SECTION -->
+    <section class="section-pad bg-white" aria-label="Contact form">
+      <div class="container-x">
+        <div class="max-w-2xl mx-auto">
 
-            <p class="text-xs font-bold uppercase tracking-widest text-kei-red mb-4">Kei Events</p>
+          <!-- SMS opt-in disclosure (A2P 10DLC carrier requirement) -->
+          <div class="rounded-2xl bg-kei-yellow-light border border-kei-yellow p-4 mb-6 text-sm text-gray-700 leading-relaxed">
+            By submitting this form, you agree to receive text messages from Kei Events about your event inquiry, booking confirmations, payment reminders, and customer service. Message frequency varies. Message and data rates may apply. Reply STOP to opt out at any time. Reply HELP for help. View our
+            <a href="/privacy-policy/" class="text-kei-blue font-medium hover:underline">Privacy Policy</a>
+            and
+            <a href="/terms/" class="text-kei-blue font-medium hover:underline">Terms</a>.
+          </div>
 
-            <h1 class="review-headline text-gray-900 mb-4 leading-tight"
-                style="font-size: clamp(2.5rem, 7vw, 4rem);">
-              How was your experience?
-            </h1>
+          <div class="rounded-3xl border-2 border-kei-yellow bg-white p-6 md:p-10">
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/ohw2pGUdiU0vAMbcikKv"
+              style="width:100%;min-height:1419px;border:none;border-radius:12px;"
+              id="inline-ohw2pGUdiU0vAMbcikKv"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="MAIN FORM"
+              data-height="1419"
+              data-layout-iframe-id="inline-ohw2pGUdiU0vAMbcikKv"
+              data-form-id="ohw2pGUdiU0vAMbcikKv"
+              title="MAIN FORM">
+            </iframe>
+          </div>
 
-            <p class="text-gray-600 leading-relaxed mb-10 text-base md:text-lg">
-              Tap the rating that matches how your event went. Your feedback shapes how we serve the next family.
-            </p>
-
-            <!-- Star rating -->
-            <div id="star-group"
-                 class="flex items-end justify-center gap-2 sm:gap-4 mb-10"
-                 role="group"
-                 aria-label="Rate your experience">
-
-              <button type="button" class="star-btn" data-value="1" aria-label="Rate 1 star">
-                <svg class="star-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M12 2l2.9 6.26L22 9.27l-5 5.14 1.18 7.09L12 18l-6.18 3.5L7 14.41 2 9.27l7.1-1.01z"/>
-                </svg>
-                <span class="star-label">1</span>
-              </button>
-
-              <button type="button" class="star-btn" data-value="2" aria-label="Rate 2 stars">
-                <svg class="star-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M12 2l2.9 6.26L22 9.27l-5 5.14 1.18 7.09L12 18l-6.18 3.5L7 14.41 2 9.27l7.1-1.01z"/>
-                </svg>
-                <span class="star-label">2</span>
-              </button>
-
-              <button type="button" class="star-btn" data-value="3" aria-label="Rate 3 stars">
-                <svg class="star-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M12 2l2.9 6.26L22 9.27l-5 5.14 1.18 7.09L12 18l-6.18 3.5L7 14.41 2 9.27l7.1-1.01z"/>
-                </svg>
-                <span class="star-label">3</span>
-              </button>
-
-              <button type="button" class="star-btn" data-value="4" aria-label="Rate 4 stars">
-                <svg class="star-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M12 2l2.9 6.26L22 9.27l-5 5.14 1.18 7.09L12 18l-6.18 3.5L7 14.41 2 9.27l7.1-1.01z"/>
-                </svg>
-                <span class="star-label">4</span>
-              </button>
-
-              <button type="button" class="star-btn" data-value="5" aria-label="Rate 5 stars">
-                <svg class="star-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path d="M12 2l2.9 6.26L22 9.27l-5 5.14 1.18 7.09L12 18l-6.18 3.5L7 14.41 2 9.27l7.1-1.01z"/>
-                </svg>
-                <span class="star-label">5</span>
-              </button>
-
+          <div class="mt-8 text-center text-sm text-gray-600">
+            <p class="mb-4 font-medium">Prefer to call or text?</p>
+            <div class="flex flex-wrap justify-center gap-6">
+              <a href="tel:+12174039288" class="link-underline inline-flex items-center gap-2 text-gray-900 font-semibold hover:text-kei-blue transition-colors tap-target">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.62 4.38 2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                (217) 403-9288
+              </a>
+              <a href="mailto:dean.aricka@gmail.com" class="link-underline inline-flex items-center gap-2 text-gray-900 font-semibold hover:text-kei-blue transition-colors tap-target">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                dean.aricka@gmail.com
+              </a>
             </div>
-
-            <p class="text-gray-400 text-sm">Takes less than a minute. We read every response.</p>
-
           </div>
 
         </div>
       </div>
     </section>
+
+    <!-- TRUST STRIP MINI -->
+    <section class="py-10 bg-kei-yellow" aria-label="Service commitments">
+      <div class="container-x">
+        <p class="text-center text-gray-800 font-semibold text-sm md:text-base tracking-wide">
+          Champaign County, IL &nbsp;&bull;&nbsp; One business day response &nbsp;&bull;&nbsp; All vendors handled
+        </p>
+      </div>
+    </section>
+
   </main>
 
   <!-- FOOTER -->
@@ -244,10 +244,11 @@
         <div>
           <p class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4">Quick links</p>
           <ul class="space-y-2.5 text-sm" role="list">
-            <li><a href="/#services" class="link-underline hover:text-white transition-colors">Services</a></li>
-            <li><a href="/#gallery"  class="link-underline hover:text-white transition-colors">Gallery</a></li>
-            <li><a href="/#about"    class="link-underline hover:text-white transition-colors">About</a></li>
-            <li><a href="/contact/"  class="link-underline hover:text-white transition-colors">Contact</a></li>
+            <li><a href="/"                class="link-underline hover:text-white transition-colors">Home</a></li>
+            <li><a href="/#services"       class="link-underline hover:text-white transition-colors">Services</a></li>
+            <li><a href="/#gallery"        class="link-underline hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="/#about"          class="link-underline hover:text-white transition-colors">About</a></li>
+            <li><a href="/contact/"        class="link-underline hover:text-white transition-colors">Contact</a></li>
             <li><a href="/review/"         class="link-underline hover:text-white transition-colors">Leave a Review</a></li>
             <li><a href="/privacy-policy/" class="link-underline hover:text-white transition-colors">Privacy Policy</a></li>
             <li><a href="/terms/"          class="link-underline hover:text-white transition-colors">Terms</a></li>
@@ -279,59 +280,31 @@
     </div>
   </footer>
 
+  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+
   <script>
     document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-    // Mobile nav toggle
-    var toggle = document.getElementById('nav-toggle');
-    var menu   = document.getElementById('mobile-menu');
-    if (toggle && menu) {
-      menu.style.display = 'none';
-      toggle.addEventListener('click', function() {
-        var open = menu.style.display !== 'none';
-        menu.style.display = open ? 'none' : 'block';
-        toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+    var siteHeader = document.getElementById('site-header');
+    window.addEventListener('scroll', function() {
+      if (siteHeader) siteHeader.classList.toggle('nav-shrunk', window.scrollY > 50);
+    }, { passive: true });
+
+    var navToggle  = document.getElementById('nav-toggle');
+    var mobileMenu = document.getElementById('mobile-menu');
+    if (navToggle && mobileMenu) {
+      navToggle.addEventListener('click', function() {
+        var isOpen = mobileMenu.classList.toggle('menu-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+      mobileMenu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          mobileMenu.classList.remove('menu-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
       });
     }
-
-    // Star rating
-    var GOOGLE_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=ChIJs-pa5qBT9qkR6347vv-X1ew';
-    var FEEDBACK_URL      = '/review/feedback/';
-
-    var starGroup = document.getElementById('star-group');
-    var buttons   = Array.from(starGroup.querySelectorAll('.star-btn'));
-
-    function setFilled(upToIndex) {
-      buttons.forEach(function(btn, i) {
-        if (i <= upToIndex) {
-          btn.classList.add('filled');
-        } else {
-          btn.classList.remove('filled');
-        }
-      });
-    }
-
-    function clearFilled() {
-      buttons.forEach(function(btn) { btn.classList.remove('filled'); });
-    }
-
-    buttons.forEach(function(btn, idx) {
-      btn.addEventListener('mouseenter', function() { setFilled(idx); });
-      btn.addEventListener('focus',      function() { setFilled(idx); });
-      btn.addEventListener('click', function() {
-        var value = parseInt(btn.getAttribute('data-value'), 10);
-        if (value >= 4) {
-          window.location.href = GOOGLE_REVIEW_URL;
-        } else {
-          window.location.href = FEEDBACK_URL;
-        }
-      });
-    });
-
-    starGroup.addEventListener('mouseleave', clearFilled);
   </script>
-
-  <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a1860351b5a98ef9d11cac8" data-source="WEB_USER" defer></script>
 
 </body>
 </html>

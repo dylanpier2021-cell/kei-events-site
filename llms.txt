@@ -5,6 +5,7 @@
 ## Pages
 
 - [Home](/): Event planning, bounce houses, games, catering, and decor
+- [Contact](/contact/): Request a quote form with SMS opt-in disclosure; Aricka responds within one business day
 - [Privacy Policy](/privacy-policy/): SMS opt-out, data collection, and privacy practices
 - [Terms and Conditions](/terms/): SMS messaging terms, opt-out instructions, compliance
 
