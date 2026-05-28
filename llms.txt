@@ -8,6 +8,10 @@
 - [Privacy Policy](/privacy-policy/): SMS opt-out, data collection, and privacy practices
 - [Terms and Conditions](/terms/): SMS messaging terms, opt-out instructions, compliance
 
+## Internal pages
+
+- [Leave a Review](/review/): Star rating funnel - routes 4-5 stars to Google, 1-3 stars to private feedback form
+
 ## Services
 
 - Birthday event planning

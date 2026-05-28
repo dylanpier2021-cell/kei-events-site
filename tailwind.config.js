@@ -3,7 +3,8 @@ module.exports = {
   content: [
     "./index.html",
     "./privacy-policy/**/*.html",
-    "./terms/**/*.html"
+    "./terms/**/*.html",
+    "./review/**/*.html"
   ],
   theme: {
     extend: {
