@@ -6,7 +6,6 @@ module.exports = {
     "./terms/**/*.html",
     "./review/**/*.html",
     "./contact/**/*.html",
-    "./rentals/**/*.html",
     "./services/**/*.html",
     "./blog/**/*.html"
   ],
