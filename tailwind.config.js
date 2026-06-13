@@ -7,6 +7,7 @@ module.exports = {
     "./review/**/*.html",
     "./contact/**/*.html",
     "./services/**/*.html",
+    "./rentals/**/*.html",
     "./blog/**/*.html"
   ],
   theme: {
