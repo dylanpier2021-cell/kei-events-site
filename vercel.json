@@ -2,5 +2,12 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/((?!under-construction|assets/).*)",
+      "destination": "/under-construction",
+      "permanent": false
+    }
+  ]
 }
